@@ -1,0 +1,240 @@
+
+@font-face {
+    font-family: 'PS-Mont-Caps-SemiBold';
+    src: url('fonts/subset-PSMontCapsSemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PS-Mont-Caps-Heavy';
+    src: url('fonts/subset-PSMontCapsHeavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST-Roman';
+    src: url('fonts/subset-SST-Roman.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST-Condensed';
+    src: url('fonts/subset-SST-Condensed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+  width:970px;
+  height:90px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+}
+
+.full-width {
+  width: 970px;
+  height: auto;
+}
+
+.semi-bold {
+  font-family: 'PS-Mont-Caps-SemiBold', sans-serif;
+}
+
+.heavy {
+  font-family: 'PS-Mont-Caps-Heavy', sans-serif;
+}
+
+.SST-Roman {
+  font-family: 'SST-Roman', sans-serif;
+}
+
+.SST-Condensed {
+  font-family: 'SST-Condensed', sans-serif;
+}
+
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:90px;
+  background-color: #000001;
+}
+
+#main {
+  overflow:hidden;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+
+
+.bg {
+  left: -500px;
+}
+
+.main-image {
+  left: -500px;
+}
+
+
+
+.copy {
+  color: #ffffff;
+
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#text-1,
+#text-2,
+#text-3 {
+  width: 970px;
+  left: 118px;
+}
+
+#text-1 {
+  top: 30px;
+  left:140px;
+
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+}
+
+#text-2 {
+  top: 20px;
+  left:137px;
+
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+}
+
+#text-3 {
+  top: 20px;
+  left: 59px;
+
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.2em;
+
+  color: #ffd200;
+}
+
+#text-legal {
+  top: 54px;
+  left: 770px;
+
+  width: 150px;
+
+  font-size: 9px;
+  line-height: 9px;
+  text-align: right;
+}
+
+
+
+#logo {
+  width: 128px;
+  height: auto;
+
+  top: 163px;
+  left: 11px;
+
+  transform: scale(10);
+}
+
+.drop-shadow {
+  filter: drop-shadow(-20px -20px 30px #000000) drop-shadow(0px 0px 30px #000000) drop-shadow(20px 20px 30px #000000);
+}
+
+
+
+/* -- CTA Rules -- */
+
+#cta_text {
+  position: relative;
+  /* top: -2px; */
+}
+
+#cta_wrapper {
+  position: relative;
+  left: 749px;
+  top: 10px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#brand_cta_outer {
+  transform-origin: 50% 0%;
+  transform: scale(0.4) ; /* Adjust CTA Position Here. */
+  padding: 4px;
+  opacity: 0;
+  border-radius: 999em;
+}
+
+#brand_cta_inner {
+  position: relative;
+  text-align: center;
+  background-color: #d53b00; /* Set CTA background color here */
+  padding: 25px 60px 24px 60px;
+  border-radius: 999em;
+}
+
+#brand_cta_inner img {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+#default_exit:hover  #brand_cta_outer {
+  outline: none;
+  box-shadow: 0 0 0 4px #d53b00!important; /* Set CTA hover stroke here */
+  transition: all .2s;
+}
+
+/* -- */
+
+
+#default_exit {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 85;
+  background-color: rgba(255,255,255,0);
+  border:1px solid #000000;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}

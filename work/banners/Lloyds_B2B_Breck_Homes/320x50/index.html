@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=320,height=50">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      var clickTag = "https://www.lloydsbank.com/";
+    </script>
+</head>
+<body onload="window.init()">
+    
+    <div id="main">
+        <!-- <img class="cover_image" src="images/cover.jpg" alt=""> -->
+        <img src="images/logo_text.svg" class="logo_text hidden" id="logo-text" alt="">
+        <img src="images/logo.gif" class="logo hidden" id="logo" alt="">
+        <!-- <img src="images/logo.png" class="" id="" alt="" style="position: absolute; width: 320px; height: auto; z-index: 1; top: 0; left: 0px;"> -->
+        <div class="copy">
+          <div id="text1" class="text hidden">
+            Join the 1 million businesses <br />
+            that bank with us, today
+          </div>
+        </div>
+        <!-- <div id="legal" class="hidden">*Lending subject to status.</div> -->
+        <div class="content"></div>
+        <img src="images/cta.svg" class="cta hidden" id="cta" alt="">
+        <img src="images/cta_roll.svg" class="cta hidden" id="cta-roll" alt="">
+        <!-- <img src="images/logo-ref.png" class="absolute full-width" id="logo-ref" alt=""> -->
+        <div id="bgExit"></div>
+    </div>
+    
+    <script>
+        var clickArea = document.getElementById("main");
+        clickArea.onclick = function () {
+          window.open(clickTag, "_blank");
+        };
+    </script>
+</body>
+</html>

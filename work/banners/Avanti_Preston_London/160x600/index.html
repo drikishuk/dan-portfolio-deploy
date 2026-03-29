@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=160,height=600">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      var clickTag = "https://www.avantiwestcoast.co.uk";
+    </script>
+
+</head>
+
+<body onload="init();">
+
+    <div id="main">
+        <div id="background"></div>
+
+        <div id="image-container">
+          <img src="images/bg.jpg" id="bg" class="absolute full-width"/>
+
+          <img src="images/txt1.png" id="txt1" class="absolute full-width animate hidden"/>
+          <img src="images/txt2.png" id="txt2" class="absolute full-width animate hidden"/>
+          <img src="images/txt3.png" id="txt3" class="absolute full-width animate hidden"/>
+          <img src="images/txt4.png" id="txt4" class="absolute full-width animate hidden"/>
+          <img src="images/txt5.png" id="txt5" class="absolute full-width animate hidden"/>
+          <img src="images/txt6.png" id="txt6" class="absolute full-width animate hidden"/>
+          <img src="images/txt7.png" id="txt7" class="absolute full-width animate hidden"/>
+          <img src="images/txt8.png" id="txt8" class="absolute full-width animate hidden"/>
+          
+          <img src="images/train.png" id="train" class="absolute full-width"/>
+          <img src="images/orange-line.png" id="orange-line" class="absolute full-width"/>
+        </div>
+
+        <img src="images/cta.jpg" id="cta" class="full-width hidden"/>
+        <img src="images/logo.png" id="logo" class="full-width hidden"/>
+
+        <div id="bgExit"></div>
+
+    </div>
+    <script>
+        var clickArea = document.getElementById("bgExit");
+        clickArea.onclick = function () {
+          window.open(clickTag);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=728,height=90" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      var clickTag = "https://www.lloydsbank.com/";
+    </script>
+  </head>
+  <body onload="window.init()">
+    <div id="main">
+      <img src="./images/logo.png" id="logo" class="absolute full-width" alt="" />
+      <!-- <div class="gif-container hidden">
+        <img
+          src="./images/horse_gif.gif"
+          class="horse_gif"
+          id="horseGif"
+          alt=""
+        />
+        <div class="logo-cover"></div>
+      </div> -->
+
+      <!-- <img src="./images/image1.png" id="image1" class="absolute full-width" alt="" /> -->
+      <img src="./images/animation.gif" id="animation" class="absolute hidden" alt="" />
+
+      <div class="absolute median" id="text1">
+        <span class="part-one hidden">
+          Going around the houses <br />
+          with your mortgage?
+        </span>
+        <span class="part-two hidden">
+        </span>
+      </div>
+
+      <div id="text2" class="absolute median">
+        <span class="part-three hidden">
+          Come direct to Lloyds <br />
+          to find your next deal
+        </span>
+      </div>
+
+      <div id="text3" class="absolute regular hidden">
+        Start your mortgage application <br />
+        online in minutes.
+      </div>
+
+      <div id="text4" class="absolute bold hidden">
+      </div>
+
+      <div id="text5" class="absolute bold hidden">
+        You could lose your home if you don’t keep up your mortgage repayments. Lending subject to approval.
+        
+      </div>
+
+      <div id="cta" class="absolute regular hidden">Find out more</div>
+
+      <div id="bgExit"></div>
+    </div>
+
+    <script>
+      var clickArea = document.getElementById("main");
+      clickArea.onclick = function () {
+        window.open(clickTag, "_blank");
+      };
+    </script>
+  </body>
+</html>

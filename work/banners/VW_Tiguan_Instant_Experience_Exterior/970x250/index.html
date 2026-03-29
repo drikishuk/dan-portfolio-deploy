@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=970,height=250">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+
+</head>
+
+<body onload="init();">
+
+    <div id="main">
+
+        <div id="background"></div>
+        <img src="images/image5.jpg" id="image5" class="absolute full-height"/>
+        <img src="images/image4.jpg" id="image4" class="absolute full-height"/>
+        <img src="images/image3.jpg" id="image3" class="absolute full-height"/>
+        <img src="images/image2.jpg" id="image2" class="absolute full-height"/>
+        <img src="images/image1.jpg" id="image1" class="absolute full-height"/>
+
+        <div id="copy1" class="copy copy1-text bold absolute hidden">
+          The new Tiguan
+        </div>
+  
+        <div id="copy2" class="copy copy1-text bold absolute full-width hidden">
+          <span class="light">Sporty</span> 
+          <br />
+          exterior design
+        </div>
+  
+        <div id="copy3" class="copy copy1-text bold absolute full-width hidden">
+          <span class="light">Larger</span> 
+          <br />
+          boot space
+        </div>
+  
+        <div id="copy4" class="copy copy1-text bold absolute full-width hidden">
+          <span class="light">Intelligent</span> 
+          <br />
+          LED Headlights
+        </div>
+  
+        <div id="terms" class="copy terms-text regular absolute full-width">
+          Optional equipment shown
+        </div>
+  
+        <div id="copy5" class="copy copy1-text bold absolute full-width hidden">
+          The new Tiguan
+          <br />
+          <span class="light">For all life’s adventures</span>
+        </div>
+
+        <div id="cta" class="regular cta-text hidden">
+          <span id="cta-text">
+            Learn more
+          </span>
+        </div>
+
+
+        <!-- <img src="images/cta.png" id="cta-ref" class="absolute full-width"/> -->
+        <img src="images/logo.png" id="logo" class="absolute full-width"/>
+
+        <div id="bgExit"></div>
+
+    </div>
+    <script>
+        var clickArea = document.getElementById("bgExit");
+        clickArea.onclick = function () {
+          window.open(clickTag);
+        };
+    </script>
+</body>
+
+</html>

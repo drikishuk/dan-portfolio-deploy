@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=160,height=600">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body onload="init();">
+
+    <div id="main" class="hidden">
+
+      <div id="background-image-container" class="absolute">
+        <img src="images/bg-arrow-2.png" alt="" id="bg-6" class="absolute full-width bg">
+        <img src="images/bg-arrow-2.png" alt="" id="bg-5" class="absolute full-width bg">
+        <img src="images/bg-arrow-2.png" alt="" id="bg-4" class="absolute full-width bg">
+        <img src="images/bg-arrow-2.png" alt="" id="bg-3" class="absolute full-width bg">
+        <img src="images/bg-arrow-1.png" alt="" id="bg-2" class="absolute full-width bg">
+      </div>
+
+      <div id="main-image-container" class="absolute">
+        <img src="images/image-1.png" alt="" id="image-1" class="absolute full-width main-image">
+        <img src="images/image-2.png" alt="" id="image-2" class="absolute full-width main-image">
+        <img src="images/image-3.png" alt="" id="image-3" class="absolute full-width main-image">
+      </div>
+
+      <div id="text-container" class="absolute">
+        <div id="" class="absolute">
+          <div id="text-1" class="absolute copy semi-bold hidden">
+            MORE <br />
+            OF <br />
+            WHAT <br />
+            YOU <br />
+            LOVE
+          </div>
+          
+          <div id="text-2" class="absolute copy SST-Roman hidden">
+            More games <br />
+            to play, <br />
+            worlds to <br />
+            explore and <br />
+            ways to <br />
+            team up.
+          </div>
+          
+          <div id="text-3" class="absolute copy heavy hidden">
+            JOIN <br />FROM <br />$14.99 <br />
+            <span class="semi-bold">A <br />MONTH</span>
+          </div>
+        </div>
+
+        <div id="text-legal" class="absolute copy SST-Condensed hidden">
+          Content and subscription features vary <br />by tier, over time and region / country. <br />Age restrictions & terms apply.
+        </div>
+      </div>
+
+
+      <img src="images/logo-1.png" alt="" id="logo-1" class="absolute full-width hidden">
+      <img src="images/tier.png" alt="" id="tier" class="absolute full-width hidden">
+
+      <div id="default_exit" class="btn">
+          <div id="cta_wrapper">
+            <div id="brand_cta_outer" class="absolute hidden">
+              <div id="brand_cta_inner">
+                <img src="images/cta_text.png" id="cta_text" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js" integrity="sha512-CuvnoNrIlhT8htAhjvvnA7EB4sUHfRvfFsjq+JvAKPotN8LlelK/lQgX+u9Gxxsl0+lXmEWRMLPv/oKT1W3dPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script>
+        var clickTag = "https://www.playstation.com/en-gb/";
+
+        var clickArea = document.getElementById("default_exit");
+        clickArea.onclick = function () {
+          window.open(clickTag);
+        };
+    </script>
+</body>
+
+</html>

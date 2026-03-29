@@ -1,0 +1,298 @@
+@font-face {
+  font-family: gillsans;
+  src: url(fonts/subset-GillSansNova-Medium.woff2);
+}
+
+/* @font-face {
+  font-family: gillsans-semibold;
+  src: url(fonts/subset-GillSansNova-Bold.woff2);
+} */
+
+@font-face {
+  font-family: gillsans-bold;
+  src: url(fonts/subset-GillSansNova-Bold.woff2);
+}
+
+sup, sub {
+  font-size: 50%;
+}
+
+html, body {
+  width:970px;
+  height:250px;
+  margin: 0;
+}
+
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:250px;
+}
+
+#main {
+  overflow:hidden;
+}
+
+#imageCont {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:250px;
+  overflow:hidden;
+}
+
+.full-width-img {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 970px;
+  height: auto;
+}
+
+.copy {
+  font-family: "gillSans";
+  color: #EBDAA4;
+}
+
+.gradient-text {
+  background: transparent linear-gradient(90deg, #CEBA79 0%, #FFF4C4 40%, #FFF4BD 68%, #C3AB75 100%) 0% 0% no-repeat padding-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bold {
+  font-family: "gillSans-bold";
+}
+
+.main-text {
+  font-weight: normal;
+  font-size: 34px;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-align: center;
+}
+
+.secondary-text {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.071;
+  text-align: left;
+}
+
+.tertiary-text {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.09;
+  text-align: left;
+}
+
+.treeBackground {
+  position: absolute;
+  width: 625px;
+  height: auto;
+  left: 339px;
+  top: -206px;
+  transform-origin: 50% 50%;
+  transform: scale(0.9);
+}
+
+.treeTextImage {
+  width: 22px;
+  height: auto;
+  left: 210px;
+  top: 39px;
+}
+
+.teddyBackground {
+  position: absolute;
+  width: 587px;
+  height: auto;
+  left: 378px;
+  top: -36px;
+  transform-origin: 50% 50%;
+  transform: scale(0.9);
+}
+
+.teddyTextImage {
+  width: 37px;
+  height: auto;
+  left: 202px;
+  top: 39px;
+}
+
+.baubleBackground {
+  position: absolute;
+  width: 630px;
+  height: auto;
+  left: 340px;
+  top: -11px;
+  transform-origin: 50% 50%;
+  transform: scale(0.9);
+}
+
+.baubleTextImage {
+  width: 24px;
+  height: auto;
+  left: 208px;
+  top: 39px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#copy1,
+#midframe,
+#endframe {
+  position:absolute;
+  left: 0px;
+  width: 440px;
+  height: auto;
+}
+
+#copy1 {
+  top: 81px;
+}
+
+#midframe, #endframe {
+  left: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#endframe {
+  top: 45px;
+}
+
+#midframe, #endframe > * {
+  position: relative
+}
+
+#copy2 {
+  margin-bottom: 9px;
+}
+
+#copy4 {
+  margin-bottom: 12px;
+}
+
+#cta-shine-container {
+  position: absolute;
+  top: 83px;
+  left: 814px;
+}
+
+#cta,
+#cta-shine-container  {
+  width: 116px;
+  height: 32px;
+  text-align: center;
+  transform-origin: 50% 50%;
+}
+
+#cta-shine-container {
+  overflow: hidden;
+}
+
+#cta-shine {
+  position: absolute;
+  top: 0px;
+  left: -250px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow:
+  0 0 60px 30px #fff,  /* inner white */
+  0 0 100px 60px #FFF4C4, /* middle gold */
+  0 0 140px 90px #FFF4BD; /* outer gold */
+}
+
+.terms {
+  position: absolute;
+  left: 10px;
+  top: 179px;
+  font-size: 8px;
+  line-height: 1.875;
+  color: #EBDAA4;
+}
+
+#logo-bar {
+  position: absolute;
+  top: 198px;
+  left: 0px;
+  width: 970px;
+  height: 52px;
+  background-color: #ffffff;
+}
+
+#logo-1,
+#logo-2,
+#logo-3,
+#logo-4 {
+  background-color: #000000;
+  position: absolute;
+  top: 218px;
+  left: 20px;
+  width: 0px;
+  height: 13px;
+  transform-origin: 0% 50%;
+}
+
+#logo {
+  position: absolute;
+  top: 218px;
+  left: 816px;
+  width: 134px;
+  height: auto;
+}
+
+#sparkles1,
+#sparkles2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 485px;
+  height: 250px;
+}
+
+.sparkle {
+  position: absolute;
+  height: auto;
+  opacity: 0;
+  z-index: 500;
+  transform: scale(0.5);
+}
+
+#bgExit {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 85;
+  background-color: rgba(255,255,255,0);
+  border:1px solid #000000;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+#guide {
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+}
+
+#product {
+  left: -15px;
+}

@@ -1,0 +1,364 @@
+/* --  REQUIRED Set Banner Size -- */
+.bannerSize {
+  width: 160px;
+  height: 600px;
+}
+
+/* -- REQUIRED Momentum Rules -- */
+.white {fill: #FFF;}
+.blue {fill: #003B9C;}
+.hide {display: none;}
+.op-0 {opacity: 0;}
+.absolute {position: absolute;}
+/* -- */
+
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+#main_container {
+  background-color: #B7B7B7;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#main_content {
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+}
+
+.border {
+  border: 1px solid #23aee1; /*Set border color here */
+  opacity: 50%;
+  z-index: 0;
+  position: absolute;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* -- CTA Rules -- */
+#brand_cta_outer {
+  transform: translate(-25px, 416px) scale(0.5) ; /* Adjust CTA Position Here */
+  padding: 4px;
+  opacity: 0;
+  border-radius: 999em;
+}
+#brand_cta_inner {
+  text-align: center;
+  background-color: #D53B00; /* Set CTA background color here */
+  padding: 18px 30px 15px;
+  border-radius: 999em;
+}
+#brand_cta_inner .noBlur{
+  margin-top: 3px;
+}
+#default_exit:hover  #brand_cta_outer {
+  outline: none;
+  box-shadow: 0 0 0 4px #D53B00!important; /* Set CTA hover stroke here */
+  transition: all .2s;
+}
+/* -- */
+
+/* Removes Blur */
+.noBlur {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  perspective: 1000px;
+}
+
+/* Things that are the size of the banner */
+.fullSize {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+:focus {
+  outline: 0;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+#main {
+  opacity: 0;
+}
+
+/* Hide intro & Bottom Bar */
+
+/* #brand_intro, */
+#clip_foot,
+#footBlueShapeBlue,
+#footBlueGradOver,
+#footBlueUnder,
+#footBlueShapeWhite,
+#footBlueSpear,
+#footBlueBevel,
+#footShadow,
+#footBlueShapeFlare,
+#footBlueGlint,
+#EN {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: 'SST Condensed Bold';
+  src: url('fonts/SST-CondensedBd.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SST Bold';
+  src: url('fonts/SST-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SST Roman';
+  src: url('fonts/SST-Roman.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PS Mont Caps Bold';
+  src: url('fonts/PSMontCapsBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+.full-width {
+  width: 160px;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+html, body {
+  width:160px;
+  height:600px;
+  margin: 0;
+}
+
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:160px;
+  height:600px;
+  background-color:#2b2928;
+  overflow:hidden;
+}
+
+#image-container {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 160px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.copy {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+.PS-Mont-Caps-Bold {
+  font-family: 'PS Mont Caps Bold', sans-serif;
+}
+
+.SST-Bold {
+  font-family: 'SST Bold', sans-serif;
+}
+
+.SST-Condensed-Bold {
+  font-family: 'SST Condensed Bold', sans-serif;
+}
+
+.SST-Roman {
+  font-family: 'SST Roman', sans-serif;
+}
+
+.text-1 {
+  font-size: 28px;
+  line-height: 26px;
+  letter-spacing: -0.06rem;
+}
+
+.text-2 {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.02rem;
+}
+
+.tabs-text {
+  font-size: 11.5px;
+  letter-spacing: -0.02rem;
+}
+
+.pegi-text {
+  font-size: 9.5px;
+  line-height: 9.5px;
+  letter-spacing: -0.02rem;
+}
+
+.yellow-text {
+  color: #fdc103;
+}
+
+#text-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 110px;
+  top: 75px;
+}
+
+#text-2 {
+  width: 160px;
+  top: 365px;
+}
+
+#tabs-text {
+  width: 160px;
+  top: 378px;
+}
+
+#pegi-text {
+  width: 160px;
+  top: 479px;
+}
+
+.game,
+.tag {
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+}
+
+.game {
+  width: 130px;
+  height: 130px;
+
+  top: 198px;
+  left: 13px;
+
+  border-radius: 5%;
+  border: solid 2px #ffc900;
+}
+
+.white-stroke {
+  border-color: #ffffff;
+}
+
+.yellow-stroke {
+  border-color: #ffc900;
+}
+
+.game:not(:first-child),
+.tag:not(:first-child)  {
+  transform: scale(0.8);
+}
+
+#game-2,
+#game-3,
+#game-4,
+#game-5,
+#game-6,
+#game-7,
+#game-8,
+#game-9 {
+  left: 173px;
+}
+
+#tag-2,
+#tag-3,
+#tag-4,
+#tag-5,
+#tag-6,
+#tag-7,
+#tag-8,
+#tag-9 {
+  left: 173px;
+}
+
+#logo {
+  position: absolute;
+  top: 203px;
+  left: 82px;
+  width: 136px;
+  height: auto;
+  opacity: 1;
+}
+
+#default_exit {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 85;
+  background-color: rgba(255,255,255,0);
+  border:1px solid #000000;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}

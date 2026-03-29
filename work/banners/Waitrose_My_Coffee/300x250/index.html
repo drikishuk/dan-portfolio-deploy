@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=300,height=250">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      var clickTag = "https://www.waitrose.com/";
+    </script>
+
+</head>
+
+<body onload="init();">
+
+    <div id="main">
+
+        <div id="background"/>
+
+        <div id="green-bar-1"></div>
+        <div id="green-bar-2"></div>
+        <div id="green-bar-3"></div>
+
+        <div id="copy1" class="copy semibold main-text">FREE <br />COFFEE <br />WHEN YOU <br />SHOP <br />WITH US</div>
+        <div id="copy2" class="copy sub-text hidden">It’s back. <br />myWaitrose <br />members can <br />enjoy a free <br />hot drink with <br />any in store <br />purchase</div>
+        <div id="terms" class="copy terms-text hidden">Terms & conditions apply</div>
+
+        <img src="images/logo1.svg" id="logo1" class=""/>
+
+        <div id="mask-bar-1"></div>
+        <div id="mask-bar-2"></div>
+        <div id="mask-bar-3"></div>
+
+        <div id="imageCont">
+          <img src="images/product1.png" id="product1" class="full-width-img"/>
+        </div>
+
+        <img src="images/logo2.svg" id="logo2" class="hidden"/>
+
+        <div id="cta-container">
+          <img src="images/cta.svg" id="cta" class="hidden"/>
+        </div>
+
+        </div>
+
+        <div id="bgExit"></div>
+
+    </div>
+    <script>
+        var clickArea = document.getElementById("bgExit");
+        clickArea.onclick = function () {
+          window.open(clickTag);
+        };
+    </script>
+</body>
+
+</html>

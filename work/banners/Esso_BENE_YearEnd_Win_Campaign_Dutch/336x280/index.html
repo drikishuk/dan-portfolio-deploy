@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=336,height=280">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      var clickTag = "https://www.esso.co.uk/en-gb";
+    </script>
+
+</head>
+
+<body onload="init();">
+
+    <div id="main" class="hidden">
+        <div id="background"></div>
+
+        <div id="image-container" class="absolute">
+          <img src="images/bg.jpg" id="bg" class="absolute full-width" alt="" />
+          <img src="images/image-1.png" id="image-1" class="absolute full-width hidden" alt="" />
+        </div>
+
+        <div id="wheel-container" class="absolute wheel">
+          <img src="images/wheel-inside.png" id="wheel-inside" class="absolute wheel" alt="" />
+          <img src="images/wheel-outside.png" id="wheel-outside" class="absolute wheel" alt="" />
+
+          <div id="lights-container">
+            <img src="images/light-half.png" id="light-half-1" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-1" class="absolute light hidden" alt="" />
+
+            <img src="images/light-half.png" id="light-half-2" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-2" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-3" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-3" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-4" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-4" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-5" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-5" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-6" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-6" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-7" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-7" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-8" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-8" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-9" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-9" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-10" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-10" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-11" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-11" class="absolute light hidden" alt="" />
+            
+            <img src="images/light-half.png" id="light-half-12" class="absolute light hidden" alt="" />
+            <img src="images/light-off.png" id="light-off-12" class="absolute light hidden" alt="" />
+          </div>
+        </div>
+        
+        <div id="copy-container">
+          <div id="text-1" class="copy bold copy1 absolute">
+            Spin en maak <br />
+            kans op <br />
+            geweldige <br />
+            MediaMarkt <br />
+            prijzen. <br />
+            Let’s go!
+          </div>
+          
+          <div id="text-2" class="copy bold copy1 absolute hidden">
+            Registreer en <br />
+            krijg een gratis <br />
+            spelmunt 
+          </div>
+        </div>
+
+
+        <div id="cta" class="bold text-center absolute hidden">
+          <span id="cta-text">
+            Registreer nu
+          </span>
+        </div>
+
+        <img src="images/logo-1.png" id="logo-1" class="absolute full-width"/>
+        <img src="images/logo-2.png" id="logo-2" class="absolute full-width"/>
+
+        <div id="bgExit"></div>
+
+    </div>
+    <script>
+        var clickArea = document.getElementById("bgExit");
+        clickArea.onclick = function () {
+          window.open(clickTag);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+@font-face {
+  font-family: gillsans;
+  src: url(fonts/subset-GillSansNova-Medium.woff2);
+}
+
+/* @font-face {
+  font-family: gillsans-semibold;
+  src: url(fonts/subset-GillSansNova-Bold.woff2);
+} */
+
+@font-face {
+  font-family: gillsans-bold;
+  src: url(fonts/subset-GillSansNova-Bold.woff2);
+}
+
+sup, sub {
+  font-size: 50%;
+}
+
+html, body {
+  width:300px;
+  height:600px;
+  margin: 0;
+}
+
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:600px;
+}
+
+#main {
+  overflow:hidden;
+}
+
+#imageCont {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:600px;
+  overflow:hidden;
+}
+
+.full-width-img {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: auto;
+}
+
+.copy {
+  font-family: "gillSans";
+  color: #EBDAA4;
+}
+
+.gradient-text {
+  background: transparent linear-gradient(90deg, #CEBA79 0%, #FFF4C4 40%, #FFF4BD 68%, #C3AB75 100%) 0% 0% no-repeat padding-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bold {
+  font-family: "gillSans-bold";
+}
+
+.main-text {
+  font-weight: normal;
+  font-size: 34px;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-align: center;
+}
+
+.secondary-text {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.076;
+  text-align: center;
+}
+
+.tertiary-text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.treeBackground {
+  position: absolute;
+  width: 1004px;
+  height: 963px;
+  left: -228px;
+  top: 46px;
+  transform-origin: 50% 50%;
+  transform: scale(0.9);
+}
+
+.treeTextImage {
+  width: 22px;
+  height: auto;
+  left: 139px;
+  top: 36px;
+}
+
+.teddyBackground {
+  position: absolute;
+  width: 497px;
+  height: auto;
+  left: -86px;
+  top: 162px;
+  transform-origin: 50% 50%;
+  transform: scale(0.9);
+}
+
+.teddyTextImage {
+  width: 37px;
+  height: auto;
+  left: 131px;
+  top: 36px;
+}
+
+.baubleBackground {
+  position: absolute;
+  width: 503px;
+  height: auto;
+  left: -82px;
+  top: 182px;
+  transform-origin: 50% 50%;
+  transform: scale(0.9);
+}
+
+.baubleTextImage {
+  width: 25px;
+  height: auto;
+  left: 138px;
+  top: 36px;
+}
+
+#copy1,
+#midframe,
+#endframe {
+  position:absolute;
+  left: 0px;
+  width: 300px;
+  height: auto;
+}
+
+#copy1 {
+  top: 78px;
+}
+
+
+
+#endframe {
+  top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#endframe, #midframe > * {
+  position: relative
+}
+
+#copy2 {
+  margin-bottom: 11px;
+}
+
+#copy4 {
+  margin-bottom: 14px;
+}
+
+#price {
+  margin-bottom: 21px;
+}
+
+.terms {
+  position: absolute;
+  top: 513px;
+  left: 10px;
+  font-size: 8px;
+  line-height: 1.875;
+  color: #EBDAA4;
+}
+
+#cta,
+#cta-shine-container  {
+  position: relative;
+  width: 116px;
+  height: 32px;
+  text-align: center;
+  transform-origin: 50% 50%;
+}
+
+#cta-shine-container {
+  overflow: hidden;
+}
+
+#cta-shine {
+  position: absolute;
+  top: 0px;
+  left: -250px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow:
+  0 0 60px 30px #fff,  /* inner white */
+  0 0 100px 60px #FFF4C4, /* middle gold */
+  0 0 140px 90px #FFF4BD; /* outer gold */
+}
+
+#logo-bar {
+  position: absolute;
+  top: 532px;
+  left: 0px;
+  width: 300px;
+  height: 68px;
+  background-color: #ffffff;
+}
+
+#logo-1,
+#logo-2,
+#logo-3,
+#logo-4 {
+  background-color: #000000;
+  position: absolute;
+  top: 557px;
+  left: 27px;
+  width: 0px;
+  height: 17px;
+  transform-origin: 0% 50%;
+}
+
+#logo {
+  position: absolute;
+  top: 557px;
+  left: 98px;
+  width: 175px;
+  height: auto;
+}
+
+#sparkles1,
+#sparkles2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 600px;
+}
+
+.sparkle {
+  position: absolute;
+  height: auto;
+  opacity: 0;
+  z-index: 500;
+  transform: scale(0.5);
+}
+
+#bgExit {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 85;
+  background-color: rgba(255,255,255,0);
+  border:1px solid #000000;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+#guide {
+  opacity: 0.4;
+}
+
+#product {
+  top: 10px;
+}
