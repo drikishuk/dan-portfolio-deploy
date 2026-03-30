@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="ad.size" content="width=970,height=250">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <!-- Google Hosted GSAP -->
+  <!-- <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script> -->
+
+  <!-- Standard CDN GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+  <!-- Standard clickthrough setup -->
+  <script type="text/javascript" charset="utf-8">
+    var clickTag = "https://www.playstation.com"
+    const bgExitHandler = (e) => {
+      window.open(window.clickTag)
+    }
+  </script>
+
+</head>
+
+<body onload="initBrand(); init();">
+
+  <div id="main_container" class="bannerSize absolute">
+
+    <div id="main_content" class="bannerSize">
+
+      <div id="banner_content" class="absolute">
+
+
+        <!--  Place Banner Content Here -->
+        <div id="main">
+          <div id="background"></div>
+          <img src="images/bg.jpg" id="bg" class="absolute full-width" />
+    
+          <div id="image-container">
+    
+            <div id="game-container" class="absolute hidden">
+              <img src="images/game-1.png" id="game-1" class="game absolute" />
+              <img src="images/game-2.png" id="game-2" class="game absolute" />
+              <img src="images/game-3.png" id="game-3" class="game absolute" />
+              <img src="images/game-4.png" id="game-4" class="game absolute" />
+              <img src="images/game-5.png" id="game-5" class="game absolute" />
+              <img src="images/game-6.png" id="game-6" class="game absolute" />
+            </div>
+    
+            <div id="tag-container" class="absolute hidden">
+              <!-- Tag images are inserted here -->
+            </div>
+    
+            <img src="images/tabs.png" id="tabs" class="absolute full-width" />
+            <img src="images/features.png" id="features" class="absolute full-width" />
+    
+            <img src="images/pegi.png" id="pegi-logo" class="absolute full-width" />
+    
+          </div>
+    
+          <div id="text-container">
+    
+            <div id="text-1" class="copy text-1 PS-Mont-Caps-Bold absolute">
+              <div>
+                STREAM GAMES <br />
+                <span class="yellow-text">
+                  DIRECT <br />
+                  TO YOUR PS5
+                </span>
+              </div>
+    
+              <div id="text-2" class="copy text-2 SST-Bold">
+                Start playing without downloading 
+              </div>
+            </div>
+    
+            <div id="tabs-text" class="copy tabs-text SST-Roman absolute">
+              Available on <span class="vertical-line">|</span> 
+            </div>
+    
+            <div id="pegi-text" class="copy pegi-text SST-Condensed-Bold absolute">
+              Games may vary. Recurring subscription fees taken automatically until cancellation. See play.st/psplus-usageterms for terms.
+            </div>
+    
+          </div>
+    
+        </div>
+
+      </div>
+
+      <!-- Below "brand" Div is Required for the PS Intro and Momentum -->
+      <div id="brand" class="bannerSize absolute">
+
+      </div>
+
+      <div id="border" class="border"></div>
+
+    </div>
+
+    <!-- Clicktag button and Brand CTA -->
+    <div id="default_exit" class="absolute bannerSize">
+      <div id="brand_cta_outer" class="absolute hide">
+        <div id="brand_cta_inner">
+          <image src="cta_text.png" class="noBlur" >
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Clicktag Script-->
+  <script>
+    document.getElementById('default_exit').addEventListener('click', bgExitHandler, false);
+  </script>
+
+<!-- Choose Service, Language, Shadow, and CTA with chooser.js -->
+<script type="text/javascript" src="chooser.js"></script>
+
+<!-- Momentum Script - Do Not Edit -->
+<script type="text/javascript" src="m_blue_970x250.js"></script>
+
+<!-- Place Banner Content Scripts Here -->
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

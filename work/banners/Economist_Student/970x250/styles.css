@@ -1,0 +1,346 @@
+@font-face {
+  font-family: MiloTE-Medi;
+  src: url(fonts/subset-MiloTE-Medi.woff2);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width:970px;
+  height:250px;
+  margin: 0;
+}
+
+#main {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:250px;
+  background-color:#e8e8e0;
+  overflow:hidden;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#background {
+  background-color: #e8e8e0;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:250px;
+}
+
+#color1,
+#color2,
+#color3,
+#color4 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:250px;
+}
+
+
+#color2,
+#color3,
+#color4 {
+  left: -970px;
+}
+
+#color1 {
+  background-color: #f9c31f;
+}
+
+#color2 {
+  background-color: #1f2e7a;
+}
+
+#color3 {
+  background-color: #1dc9a4;
+}
+
+#color4 {
+  background-color: #e3120b;
+}
+
+#color2a,
+#color2b,
+#color2c,
+#color2d,
+#color2e,
+#color2f,
+#color3a,
+#color3b,
+#color3c,
+#color3d,
+#color3e,
+#color3f,
+#color4a,
+#color4b,
+#color4c,
+#color4d,
+#color4e,
+#color4f {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform-origin: 0% 50%;
+  /* transition: all 1s ease; */
+}
+
+#color2a,
+#color2b,
+#color2c,
+#color2d,
+#color2e,
+#color2f {
+  background-color: #1f2e7a;
+}
+
+#color3a,
+#color3b,
+#color3c,
+#color3d,
+#color3e,
+#color3f {
+  background-color: #1dc9a4;
+}
+
+#color4a,
+#color4b,
+#color4c,
+#color4d,
+#color4e,
+#color4f {
+  background-color: #e3120b;
+}
+
+#color2a,
+#color3a,
+#color4a {
+  height: 60px
+}
+
+#color2b,
+#color3b,
+#color4b {
+  height: 77px;
+  top: 523px;
+}
+
+#color2c,
+#color3c,
+#color4c {
+  height: 98px;
+  top: 60px;
+}
+
+#color2d,
+#color3d,
+#color4d {
+  height: 152px;
+  top: 158px;
+  left: 147px;
+}
+
+#color2e,
+#color3e,
+#color4e {
+  height: 93px;
+  top: 310px;
+  left: 0px;
+}
+
+#color2f,
+#color3f,
+#color4f {
+  height: 124px;
+  top: 403px;
+  left: 115px;
+}
+
+#imageCont {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:250px;
+  overflow:hidden;
+}
+
+#bkg {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:970px;
+  height:auto;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+}
+
+.copy {
+  font-family: "MiloTE-Medi";
+  color: #ffffff;
+}
+
+.main-text {
+  font-weight: normal;
+  font-size: 78px;
+  line-height: 80px;
+  text-align: left;
+}
+
+.sub-text {
+  font-weight: normal;
+  font-size: 25px;
+  /* letter-spacing: 0.01em; */
+  line-height: 28px;
+  text-align: left;
+}
+
+.number {
+  position: relative;
+  top: -7px;
+}
+
+#h1 {
+  position:absolute;
+  left: 38px;
+  top: 67px;
+  width: auto;
+  height: auto;
+  color: #1f2e7a;
+}
+
+#h2a,
+#h2b,
+#h3a,
+#h3b,
+#h4a,
+#h4b {
+  position:absolute;
+  left: 38px;
+  top: 67px;
+  width: 0px;
+  height: auto;
+  text-align: left;
+  color: #1f2e7a;
+  overflow: hidden;
+}
+
+#h2b,
+#h3b,
+#h4b {
+  position:absolute;
+  left: 194.5px;
+  top: 67px;
+  height: auto;
+}
+
+#h2a,
+#h2b,
+#h4a,
+#h4b {
+  color: #ffffff
+}
+
+#txt1,
+#txt2,
+#txt3,
+#txt4,
+#txt5 {
+  position:absolute;
+  top: 0;
+  left: 41px;
+  width: 970px;
+  height: auto;
+}
+
+#txt1,
+#txt3 {
+  color: #1f2e7a;
+}
+
+#txt1a,
+#txt1b,
+#txt1c,
+#txt1d,
+#txt1e,
+#txt1f,
+#txt1g,
+#txt2a,
+#txt2b,
+#txt2c,
+#txt2d,
+#txt2e,
+#txt2f,
+#txt2g,
+#txt3a,
+#txt3b,
+#txt3c,
+#txt3d,
+#txt3e,
+#txt3f,
+#txt3g,
+#txt3h,
+#txt5a,
+#txt5b,
+#txt5c {
+  position: relative;
+  top: 153px;
+  display: inline-block;
+}
+
+#txt4a,
+#txt4b,
+#txt4c {
+  position: relative;
+  top: 32px;
+  display: inline-block;
+  line-height: 23px;
+}
+
+#cta {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width:970px;
+  height:250px;
+  height: auto;
+  transform-origin: 839px 125px;
+}
+
+#logo {
+  position: absolute;
+  left: 14px;
+  top: 188px;
+  width: 93px;
+  height: auto;
+}
+
+#bgExit {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 85;
+  background-color: rgba(255,255,255,0);
+  border:1px solid #000000;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}

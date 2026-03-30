@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+body, body * {
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+:focus { outline:none; }
+::-moz-focus-inner { border:0; }
+
+
+
+
+
+@font-face {
+    font-family: 'Nissan Brand Light';
+    src: url('https://s0.2mdn.net/creatives/assets/4659273/NissanBrand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nissan Brand Reg';
+    src: url('https://s0.2mdn.net/creatives/assets/4659273/NissanBrand-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nissan Brand Bold';
+    src: url('https://s0.2mdn.net/creatives/assets/4659273/subset-NissanBrand-Bold.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ********************************************************************************************* */
+/* Preloader *********************************************************************************** */
+
+#preloader {
+	background-color: white;
+}
+
+#spinnerContainer {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.spinner {
+	animation: spin 400ms linear infinite;
+	width: 25px;
+	height: 25px;
+	border: 3px solid #cc082b;
+	/* border-bottom-color: #d3d3d3; */
+	border-color: #000000 transparent #cc082b transparent;
+	border-radius: 50%;
+}
+
+@keyframes spin {
+	to { transform: rotate(360deg); }
+}
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+
+
+/* ********************************************************************************************* */
+/* Util classes ******************************************************************************** */
+/* Only change the width and height in container and content */
+
+#container {
+	border: black solid 1px;
+	width: 968px;
+	height: 248px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#content {
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 970px;
+	height: 250px;
+	perspective: 800px;
+}
+
+.hidden {
+	display: none;
+	opacity: 0;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
+}
+
+.asset {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+	overflow: hidden;
+
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	
+	cursor: pointer;
+}
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+
+
+/* #frame4 {
+
+  }
+  
+
+#frame3 {
+
+  }
+  
+
+#frame2 {
+
+  }
+  
+#frame1 {
+
+  } */
+
+
+  
+  .copy {
+	position:absolute;
+	font-family:'Nissan Brand Light';
+	font-size:30px;
+	text-align:left;
+	-webkit-font-smoothing: antialiased;
+	line-height:1.1;
+	padding-left:683px;
+	padding-top:60px;
+	letter-spacing:0px;
+	left:0px;
+	top:0px;
+	width:970px;
+	height:100px;
+	color:white;
+	/* text-shadow: 3px 3px 9px #000000; */
+  }
+
+
+  .subCopy {
+	position:absolute;
+	font-family:'Nissan Brand Light';
+	font-size:20px;
+	text-align:left;
+	-webkit-font-smoothing: antialiased;
+	line-height:1;
+	padding-left:683px;
+	padding-top:130px;
+	letter-spacing:0px;
+	left:0px;
+	top:0px;
+	width:970px;
+	height:100px;
+	color:white;
+  }
+
+  .legalCopyPos1 {
+	position:absolute;
+	font-family:'Nissan Brand Light';
+	font-size:9px;
+	text-align: left;
+	/* -webkit-font-smoothing: antialiased; */
+	line-height:1.1;
+	padding-left:23px;
+	padding-top:236px;
+	left:0px;
+	top:0px;
+	width:970px;
+	height:100px;
+	color:white;
+  }
+  
+  .legalCopyPos2 {
+	position:absolute;
+	font-family:'Nissan Brand Light';
+	font-size:9px;
+	text-align: left;
+	/* -webkit-font-smoothing: antialiased; */
+	line-height:1.1;
+	padding-left:23px;
+	padding-top:226px;
+	left:0px;
+	top:0px;
+	width:970px;
+	height:100px;
+	color:white;
+  }
+  
+    #britLockup {
+	left:22px;
+	top:-28px;
+  }
+
+  #copyLockCont {
+	top:5px;
+	clip: rect(70px, 970px, 117px, 0px);
+}
+
+.copyLock {
+	position:absolute;
+	font-family:'Nissan Brand Bold';
+	font-size:66px;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	line-height:0.7;
+	padding-top:0px;
+	letter-spacing:0px;
+	left:630px;
+	top:-25px;
+	width:300px;
+	height:100px;
+	color:white;
+	/* clip: rect(65px, 300px, 600px, 0px); */
+  }
+
+#by {
+    clip: rect(70px, 740px, 156px, 0px);
+}
+
+#brit {
+    clip: rect(115px, 860px, 220px, 740px);
+}
+
+
+  #cta {
+	position: absolute;
+	left: 721px;
+	bottom: 68px;
+	width: 156px;
+	height: 30px;
+	background:#c3002f;
+	color:white;
+	font-family:'Nissan Brand Reg';
+	font-size:15px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.2;
+	/* -webkit-font-smoothing: antialiased; */
+	background-position: "left top";
+  }
+
+  .clip-svg { position:absolute; clip-path: url(#clipBase); -webkit-clip-path:url(#clipBase);}
+  .clip-svg2 { position:absolute; clip-path: url(#clipBase); -webkit-clip-path:url(#clipBase);}
+  .clip-svg3 { position:absolute; clip-path: url(#clipBase); -webkit-clip-path:url(#clipBase);}
+  .clip-svg4 { position:absolute; clip-path: url(#clipBase); -webkit-clip-path:url(#clipBase);}
+  .clip-svg5 { position:absolute; clip-path: url(#clipBase); -webkit-clip-path:url(#clipBase);}
+
+
+  
